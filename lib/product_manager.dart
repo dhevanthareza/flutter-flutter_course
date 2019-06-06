@@ -27,7 +27,7 @@ class _ProductManager extends State<ProductManager> {
   Widget build(BuildContext context) {
     return Column(children: [
       ProductControl(_addProduct),
-      Products(_products)
+      Expanded(child: Products(_products))
     ]);
   }
 }
